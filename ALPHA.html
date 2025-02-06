@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>หน้าต่อไป - ALPHA</title>
+  <style>
+    body {
+      background-color: #a0d8e2; /* ฟ้าครามมิ้นอ่อน */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #1a4d6f;
+    }
+    p {
+      font-size: 24px;
+      color: #1a4d6f;
+    }
+    .btn {
+      background-color: #1a4d6f;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .btn:hover {
+      background-color: #124259;
+    }
+  </style>
+</head>
+<body>
+  <h1>คือเราจะบอกว่า</h1>
+  <p>รักนะ</p>
+  <br>
+  <p>คือเราอยากจะบอกว่าตั้งนานเเล้วอะ</p>
+  <br>
+  <p>พูดจริงๆนะ</p>
+  <button class="btn" onclick="goToNextPage()">กดต่อ</button>
+  <script>
+    // ฟังก์ชันที่จะแสดงข้อความเมื่อกดปุ่ม "ลองกดดู"
+    function showMessage() {
+      document.getElementById('showMessageBtn').style.display = 'none'; // ซ่อนปุ่ม "ลองกดดู"
+      document.getElementById('messageSection').classList.remove('hidden'); // แสดงข้อความ
+    }
+
+    // ฟังก์ชันที่พาไปยังหน้าต่อไป
+    function goToNextPage() {
+      window.location.href = "ALPHAA.html"; // ไปยังหน้าใหม่
+    }
+  </script>
+</body>
+</html>

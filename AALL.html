@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALPHA</title>
+  <style>
+    body {
+      background-color: #a0d8e2; /* ฟ้าครามมิ้นอ่อน */
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+      align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+      height: 100vh; /* ใช้ความสูงของหน้าจอทั้งหมด */
+      margin: 0;
+      text-align: center;
+    }
+    h1 {
+      color: #1a4d6f;
+    }
+    .btn {
+      background-color: #1a4d6f;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .btn:hover {
+      background-color: #124259;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>ยินดีต้อนรับสู่ ALPHA</h1>
+    <!-- ปุ่ม ลองกดดู -->
+    <button class="btn" id="showMessageBtn" onclick="showMessage()">ลองกดดู</button>
+  
+    <!-- ข้อความหลังจากกดปุ่ม -->
+    <div id="messageSection" class="hidden">
+      <p>สวัสดีเราชื่ออัลฟ่านะ เธอชื่ออะไรหรอ?</p>
+      <button class="btn" onclick="goToNextPage()">ไปหน้าต่อไป</button>
+    </div>
+  </div>
+
+  <script>
+    // ฟังก์ชันที่จะแสดงข้อความเมื่อกดปุ่ม "ลองกดดู"
+    function showMessage() {
+      document.getElementById('showMessageBtn').style.display = 'none'; // ซ่อนปุ่ม "ลองกดดู"
+      document.getElementById('messageSection').classList.remove('hidden'); // แสดงข้อความ
+    }
+
+    // ฟังก์ชันที่พาไปยังหน้าต่อไป
+    function goToNextPage() {
+      window.location.href = "ALPHA.html"; // ไปยังหน้าใหม่
+    }
+  </script>
+</body>
+</html>
